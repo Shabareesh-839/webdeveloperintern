@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            background: #eaeaea;
+            padding: 20px 0;
+        }
+        .contact-info div {
+            text-align: center;
+        }
+        .contact-info div h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .map {
+            margin: 20px auto;
+            text-align: center;
+        }
+        iframe {
+            width: 80%;
+            height: 300px;
+            border: 0;
+        }
+        .contact-form {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form h3 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+        
+  .footer-bottom {
+    background-color: #007bff;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-bottom ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-bottom ul li a:hover {
+    color: #fefeff;
+  }
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt="Native Software Logo">
+          <span>Native Software</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <!-- <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+<section class="contact-info">
+    <div>
+        <h3>Phone</h3>
+        <p>(123) 456-7890</p>
+    </div>
+    <div>
+        <h3>Email</h3>
+        <p>info@example.com</p>
+    </div>
+    <div>
+        <h3>Location</h3>
+        <p>123 Business St., City, Country</p>
+    </div>
+</section>
+
+<section class="map">
+    <h3>Find Us on the Map</h3>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.917862522292!2d-122.0842495846829!3d37.4220657798211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5c1d5e8451d%3A0x69b8ff6c5df14ba6!2sGoogleplex!5e0!3m2!1sen!2sus!4v1638929074466!5m2!1sen!2sus"
+        allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="contact-form">
+    <h3>Get in Touch</h3>
+    <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer id="footer">
+    <div class="container">
+      <div class="footer-row">
+        <!-- Company Info -->
+        <div class="footer-column">
+          <img src="logo.png" alt="Native Software Logo" class="footer-logo">
+          <p>
+            At Native SofTech, we bring ideas to life through innovative technology solutions. 
+            Established with a vision to deliver exceptional quality and unmatched service,
+            that exceed customer expectations.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Services -->
+        <div class="footer-column">
+          <h3>Services We Offer</h3>
+          <ul>
+            <li><a href="#">Web Application</a></li>
+            <li><a href="#">Mobile Application</a></li>
+            <li><a href="#">API Development</a></li>
+            <li><a href="#">Custom Software</a></li>
+          </ul>
+        </div>
+        <!-- Useful Links -->
+        <div class="footer-column">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li><strong>Phone:</strong> (+91) 9426664789</li>
+            <li><strong>Email:</strong> <a href="mailto:contact@native.software">contact@native.software</a></li>
+            <li><strong>Address:</strong> 108, Lake City Shopping Center, Near Baben Lake, Baben, Bardoli-394601, Gujarat, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2014. All Rights Reserved by Native Software</p>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Licensing Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

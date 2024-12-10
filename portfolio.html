@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Native Software</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 20px;
+        }
+
+        /* .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        } */
+
+        .heading {
+            text-align: center;
+        }
+
+        .heading h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .filter-buttons button {
+            border: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .filter-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card-content {
+            padding: 15px;
+        }
+
+        .product-card-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: #007bff;
+        }
+
+        .product-card-content p {
+            font-size: 0.9em;
+            margin: 0 0 15px;
+            color: #555;
+        }
+
+        .product-card-content .actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-card-content .actions a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .product-card-content .actions a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <div class="logo">
+          <img src="logo.png" alt="Native SofTech    Logo">
+          <span>Native SofTech</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <!-- <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Products</h1>
+            <p>Providing solutions according to customer expectations on time and with complete satisfaction.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button>All</button>
+            <button>Website</button>
+            <button>Desktop Application</button>
+            <button>Mobile Application</button>
+        </div>
+
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="image/image.png" alt="Credit App">
+                <div class="product-card-content">
+                    <h3>Credit App</h3>
+                    <p>Full project: Finance, Loan, Business, Mobile Apps.</p>
+                    <div class="actions">
+                        <a href="#">Read More</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="image/e_commerce.png" alt="E-Commerce Platform">
+                <div class="product-card-content">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Feature-rich solution for online retail stores.</p>
+                    <div class="actions">
+                        <a href="#">Read More</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="image/education.jpeg" alt="Education Portal">
+                <div class="product-card-content">
+                    <h3>Education Portal</h3>
+                    <p>Online learning platform with interactive modules.</p>
+                    <div class="actions">
+                        <a href="#">Read More</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="image/teavelingbook.jpeg" alt="Travel Booking App">
+                <div class="product-card-content">
+                    <h3>Travel Booking App</h3>
+                    <p>Comprehensive solution for planning and booking trips.</p>
+                    <div class="actions">
+                        <a href="#">Read More</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="image/HealthTracker.jpeg " alt="Health Tracker">
+                <div class="product-card-content">
+                    <h3>Health Tracker</h3>
+                    <p>Mobile app for fitness, nutrition, and wellness tracking.</p>
+                    <div class="actions">
+                        <a href="#">Read More</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="image/InventoryManagement.jpeg" alt="Inventory Management">
+                <div class="product-card-content">
+                    <h3>Inventory Management</h3>
+                    <p>Efficient system for managing warehouse operations.</p>
+                    <div class="actions">
+                        <a href="#">Read More</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="image/NativeMatrimony.jpeg" alt="Native Matrimony App">
+                <div class="product-card-content">
+                    <h3>Native Matrimony App</h3>
+                    <p>CMS with website, admin panel, API, and database.</p>
+                    <div class="actions">
+                        <a href="#">Read More</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+
+            <div class="product-card">
+                <img src="image/RealEstatePortal.jpeg" alt="Real Estate Portal">
+                <div class="product-card-content">
+                    <h3>Real Estate Portal</h3>
+                    <p>Property listing platform with search and filter features.</p>
+                    <div class="actions">
+                        <a href="#">Read More</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+        <footer id="footer">
+            <div class="container">
+              <div class="footer-row">
+                <!-- Company Info -->
+                <div class="footer-column">
+                  <img src="logo.png" alt="Native Software Logo" class="footer-logo">
+                  <p>
+                    At Native SofTech, we bring ideas to life through innovative technology solutions. 
+                    Established with a vision to deliver exceptional quality and unmatched service,
+                    that exceed customer expectations.</p>
+                  <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <!-- Services -->
+                <div class="footer-column">
+                  <h3>Services We Offer</h3>
+                  <ul>
+                    <li><a href="#">Web Application</a></li>
+                    <li><a href="#">Mobile Application</a></li>
+                    <li><a href="#">API Development</a></li>
+                    <li><a href="#">Custom Software</a></li>
+                  </ul>
+                </div>
+                <!-- Useful Links -->
+                <div class="footer-column">
+                  <h3>Useful Links</h3>
+                  <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">About Us</a></li>
+                  </ul>
+                </div>
+                <!-- Contact -->
+                <div class="footer-column">
+                  <h3>Contact</h3>
+                  <ul>
+                    <li><strong>Phone:</strong> (+91) 9426664789</li>
+                    <li><strong>Email:</strong> <a href="mailto:contact@native.software">contact@native.software</a></li>
+                    <li><strong>Address:</strong> 108, Lake City Shopping Center, Near Baben Lake, Baben, Bardoli-394601, Gujarat, India</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <p>© 2014. All Rights Reserved by Native Software</p>
+                <ul>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Refund Policy</a></li>
+                  <li><a href="#">Licensing Terms</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        
+        </body>
+        </html>
